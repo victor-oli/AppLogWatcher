@@ -11,7 +11,7 @@ namespace AppLogWatcher
         private static string[] toSendMessages;
 
         public WatcherManager()
-        {
+        { 
             botClient = new TelegramBotClient(ConfigurationManager.AppSettings["TelegramBotToken"]);
             toSendMessages = ConfigurationManager.AppSettings["ToSendMessages"].Split('/');
         }
