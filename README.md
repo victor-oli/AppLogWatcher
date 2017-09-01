@@ -2,13 +2,15 @@ Adicionar essas Tags no .config.
 - TelegramBotToken: É o token do seu bot.
 - ToSendMessages: A segunda são os chatids que você quer que as mensagens sejam enviadas.
 
+```
+    <add key="TelegramBotToken" value="token_do_bot" />
+    
+    // para adicionar mais de um chatid, é só separar com o caracter '/'. exemplo: 123/456/789
+    <add key="ToSendMessages" value="chatids" />
+```
+
 
 Exemplo de uso:
-
-```
-    <add key="TelegramBotToken" value="351580461:AAGm5jqrQ5pO42vjp5NwHft4H66nAZZG8JE" />
-    <add key="ToSendMessages" value="-166737837" />
-```
 
 ```
     // envio de mensagem de texto
